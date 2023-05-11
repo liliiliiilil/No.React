@@ -1,0 +1,26 @@
+/* 
+  主题变量 
+  字体相关命名: --font-
+  边框相关命名: --border-
+  背景相关命名: --background-
+  阴影相关命名: --shadow-
+  
+  如颜色: --font-color-warning
+*/
+
+:root,
+:root.sunny {
+  --font-color-1: #186cb8;
+  --font-color-2: #186cb8;
+  --font-color-3: #186cb8;
+  --font-color-4: #186cb8;
+  --font-color-5: #186cb8;
+}
+
+:root.night {
+  --font-color-3: #000000;
+  --font-color-1: #000000;
+  --font-color-2: #000000;
+  --font-color-5: #000000;
+  --font-color-4: #000000;
+}

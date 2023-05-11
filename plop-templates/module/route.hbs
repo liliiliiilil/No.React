@@ -1,0 +1,10 @@
+const Element = lazy(() => import("./views"));
+
+export default [
+  {
+    title: "{{name}}",
+    path: "/{{lowerCase code}}",
+    element: <Element />,
+    children: [],
+  },
+];

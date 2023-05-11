@@ -1,0 +1,6 @@
+import "./style.scss";
+import {} from "@/{{lowerCase code}}/service";
+export default function {{properCase code}}() {
+  const store = use{{properCase code}}Store();
+  return <div className="{{lowerCase code}}-wrap">{store.text}</div>;
+}
