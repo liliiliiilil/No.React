@@ -1,4 +1,4 @@
-# NO.VUE
+# xinnigs.react
 
 基于 `Vite` 搭建的 `React Hooks` `TypeScript` 框架
 
@@ -8,7 +8,7 @@
 
 ### Main
 
-`React Hooks` `React Router` `Valtio` `Axios` `antd`
+`React Hooks` `React Router` `Valtio` `Axios`
 
 ### AutoImport
 
@@ -16,7 +16,7 @@
 
 ### Modular
 
-`route` `sevice` `store`
+`route` `sevice` `store` `locale`
 
 ### CLI
 
@@ -24,7 +24,7 @@
 
 ### Tools
 
-`request(axios)` `useTopic(root)`
+`request(axios)` `useTopic(root)` `use{module}Store` `useLocale` `setLocale`
 
 ### Format
 
