@@ -15,6 +15,16 @@ export default {
   actions: [
     {
       type: "add",
+      path: "src/modules/{{lowerCase code}}/locale/zh_CN.ts",
+      templateFile: "plop-templates/module/locale/zh_CN.hbs",
+    },
+    {
+      type: "add",
+      path: "src/modules/{{lowerCase code}}/locale/en_US.ts",
+      templateFile: "plop-templates/module/locale/en_US.hbs",
+    },
+    {
+      type: "add",
       path: "src/modules/{{lowerCase code}}/views/index.tsx",
       templateFile: "plop-templates/module/views/index.hbs",
     },

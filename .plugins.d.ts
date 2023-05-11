@@ -17,7 +17,9 @@ declare global {
   const memo: typeof import("react")["memo"];
   const request: typeof import("./src/plugins/request")["default"];
   const router: typeof import("./src/plugins/router")["router"];
+  const setLocale: typeof import("./src/plugins/i18n")["setLocale"];
   const startTransition: typeof import("react")["startTransition"];
+  const t: typeof import("./src/plugins/i18n")["t"];
   const useCallback: typeof import("react")["useCallback"];
   const useContext: typeof import("react")["useContext"];
   const useDebugValue: typeof import("react")["useDebugValue"];
@@ -32,6 +34,7 @@ declare global {
   const useInsertionEffect: typeof import("react")["useInsertionEffect"];
   const useLayoutEffect: typeof import("react")["useLayoutEffect"];
   const useLinkClickHandler: typeof import("react-router-dom")["useLinkClickHandler"];
+  const useLocale: typeof import("./src/plugins/i18n")["useLocale"];
   const useLocation: typeof import("react-router-dom")["useLocation"];
   const useLoginStore: typeof import("./src/modules/login/store")["useLoginStore"];
   const useLostStore: typeof import("./src/modules/lost/store")["useLostStore"];

@@ -28,6 +28,13 @@ export default function Login() {
   useEffect(() => {
     sessionStorage.clear();
     animation();
+
+    setTimeout(() => {
+      setLocale("en_US");
+      setTimeout(() => {
+        setLocale("zh_CN");
+      }, 1000);
+    }, 1000);
   }, []);
 
   const animation = (interval = 100, skip = 50) => {
@@ -87,7 +94,8 @@ export default function Login() {
       )}
 
       <Button className="login" onClick={onSubmit}>
-        {store.text}
+        {t("login.text")}
+        {/* {store.text} */}
       </Button>
     </div>
   );
