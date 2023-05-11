@@ -24,7 +24,7 @@
 
 ### Tools
 
-`request(axios)` `useTopic(root)` `use{module}Store` `useLocale` `setLocale`
+`request(axios)` `useTopic(root)` `use{Module}Store` `useLocale` `setLocale`
 
 ### Format
 
