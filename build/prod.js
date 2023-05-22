@@ -17,18 +17,18 @@ export default ({ mode }) => {
           entryFileNames: "js/[name]-[hash].js",
           assetFileNames: "[ext]/[name]-[hash].[ext]",
           comments: true,
-          // manualChunks: (code) => {
-          // if (code.includes("react")) {
-          //   return "react";
-          // }
-          // if (code.includes("antd")) {
-          //   return "antd";
-          // }
-          // if (code.includes("lodash")) {
-          //   return "lodash";
-          // }
-          // return "vendor";
-          // },
+          manualChunks: (code) => {
+            if (code.includes("node_modules")) {
+              return "vendor";
+            }
+            // if (code.includes("react")) {
+            //   return "react";
+            // }
+            // if (code.includes("lodash")) {
+            //   return "lodash";
+            // }
+            // return "vendor";
+          },
         },
       },
     },

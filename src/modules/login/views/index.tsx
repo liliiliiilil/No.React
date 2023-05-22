@@ -1,5 +1,4 @@
 import "./index.scss";
-import { Button } from "antd";
 export default function Login() {
   let timer: any;
   const innerWidth = window.innerWidth;
@@ -24,17 +23,11 @@ export default function Login() {
   );
   const [topic, setTopic] = useTopic();
   const store = useLoginStore();
+  const locale = useLocale();
 
   useEffect(() => {
     sessionStorage.clear();
     animation();
-
-    setTimeout(() => {
-      setLocale("en_US");
-      setTimeout(() => {
-        setLocale("zh_CN");
-      }, 1000);
-    }, 1000);
   }, []);
 
   const animation = (interval = 100, skip = 50) => {
@@ -64,8 +57,8 @@ export default function Login() {
   };
 
   const onSubmit = () => {
-    store.text = store.text === "2323" ? "2ddssss" : "2323";
     setTopic(topic === "night" ? "sunny" : "night");
+    setLocale(locale === "en_US" ? "zh_CN" : "en_US");
   };
 
   return (
@@ -93,10 +86,9 @@ export default function Login() {
         }
       )}
 
-      <Button className="login" onClick={onSubmit}>
-        {t("login.text")}
-        {/* {store.text} */}
-      </Button>
+      <div className="login" onClick={onSubmit}>
+        {t(store.text)}
+      </div>
     </div>
   );
 }

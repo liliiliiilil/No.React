@@ -1,3 +1,3 @@
 export default {
-  text: "NO.REACT",
+  text: "No.React",
 };

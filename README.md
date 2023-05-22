@@ -1,4 +1,4 @@
-# NO.VUE
+# No.React
 
 基于 `Vite` 搭建的 `React Hooks` `TypeScript` 框架
 
@@ -8,7 +8,7 @@
 
 ### Main
 
-`React Hooks` `React Router` `Valtio` `Axios` `antd`
+`React Hooks` `React Router` `Valtio` `Axios`
 
 ### AutoImport
 

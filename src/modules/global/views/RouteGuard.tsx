@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { handleRouter } from "@/global/service";
 
 /** @采用异步加载路由还是静态比对路由 */
-const isAsynchronous = false;
+const isAsynchronous = true;
 export default function RouteGuard() {
   const store = useGlobalStore();
   const navigate = useNavigate();
@@ -13,24 +13,26 @@ export default function RouteGuard() {
   useEffect(() => {
     // 是否获取权限表
     if (store.authority.size) {
-      // 除登录页外校验标识
-      // if (location.pathname !== "/login") {
-      //   const uniquely = sessionStorage.getItem("uniquely");
-      //   if (!uniquely) {
-      //     navigate("/login");
-      //   }
-      // }
+      // 除登录页外校验标识;
+      if (location.pathname !== "/login") {
+        const uniquely = sessionStorage.getItem("uniquely");
+        if (!uniquely) {
+          // navigate("/login");
+        }
+      }
     } else {
       handleRouter(isAsynchronous).then(
-        ([menu, authority, _routes]: [
+        // ([menu, authority, _routes]: [
+        ([, authority, _routes]: [
           Array<MENU>,
           Map<string, Set<string>>,
           any
         ]) => {
-          console.log(menu, "menu?");
           setRoutes(_routes);
           store.authority = authority;
-          navigate(location.pathname);
+          setTimeout(() => {
+            navigate(location.pathname);
+          }, 500);
         }
       );
     }

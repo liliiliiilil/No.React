@@ -4,7 +4,7 @@ interface T {
   text: string;
 }
 const data: T = {
-  text: "监管执法-企业端",
+  text: "login.text",
 };
 
 export const useLoginStore = (): T => useProxy(proxy(data));
