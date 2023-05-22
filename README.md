@@ -16,7 +16,7 @@
 
 ### Modular
 
-`route` `sevice` `store`
+`route` `sevice` `store` `locale`
 
 ### CLI
 
@@ -24,7 +24,7 @@
 
 ### Tools
 
-`request(axios)` `useTopic(root)`
+`request(axios)` `useTopic(root)` `use{Module}Store` `useLocale` `setLocale`
 
 ### Format
 
