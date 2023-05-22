@@ -49,7 +49,6 @@ declare global {
   const useResolvedPath: typeof import("react-router-dom")["useResolvedPath"];
   const useRoutes: typeof import("react-router-dom")["useRoutes"];
   const useSearchParams: typeof import("react-router-dom")["useSearchParams"];
-  const useSettingStore: typeof import("./src/modules/setting/store")["useSettingStore"];
   const useState: typeof import("react")["useState"];
   const useSyncExternalStore: typeof import("react")["useSyncExternalStore"];
   const useTopic: typeof import("./src/plugins/topic")["useTopic"];

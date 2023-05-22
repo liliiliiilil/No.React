@@ -45,7 +45,6 @@
     "useResolvedPath": true,
     "useRoutes": true,
     "useSearchParams": true,
-    "useSettingStore": true,
     "useState": true,
     "useSyncExternalStore": true,
     "useTopic": true,

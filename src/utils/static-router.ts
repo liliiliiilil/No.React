@@ -81,10 +81,6 @@ const menu = [
     label: "目录名称",
   },
   {
-    label: "系统设置",
-    children: [{ code: "setting", label: "菜单名称" }],
-  },
-  {
     label: "菜单名称",
     children: [{ code: "v1", label: "菜单名称" }],
   },
