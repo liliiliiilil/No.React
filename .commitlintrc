@@ -1,0 +1,32 @@
+{
+  "rules": {
+    "type-enum": [
+      2,
+      "always",
+      [
+        "feat",
+        "update",
+        "fix",
+        "conf",
+        "optimize",
+        "factor",
+        "format",
+        "doc"
+      ]
+    ],
+    "type-empty": [
+      2,
+      "never"
+    ],
+    "type-case": [
+      2,
+      "always",
+      "lower-case"
+    ],
+    "header-max-length": [
+      2,
+      "never",
+      72
+    ]
+  }
+}

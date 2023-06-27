@@ -1,0 +1,44 @@
+{
+  "id": "3908088",
+  "name": "7INXIAL",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "9382407",
+      "name": "蓝点点",
+      "font_class": "landiandian",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "1219799",
+      "name": "登出",
+      "font_class": "dengchu",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "27402311",
+      "name": "换肤",
+      "font_class": "huanfu",
+      "unicode": "ee16",
+      "unicode_decimal": 60950
+    },
+    {
+      "icon_id": "25223407",
+      "name": "语言切换",
+      "font_class": "language",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "18986691",
+      "name": "GitHub",
+      "font_class": "github",
+      "unicode": "e8c6",
+      "unicode_decimal": 59590
+    }
+  ]
+}
